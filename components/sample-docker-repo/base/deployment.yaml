@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: sample-docker-repo
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/susdas-tenant/sample-docker-repo/sample-docker-repo@sha256:3457292b3c13be82bc2c0596ad7b64c0e283e910415be626238ac954d1da7fe8
         imagePullPolicy: Always
         name: container-image
         ports:
