@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sample-docker-repo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/susdas-tenant/sample-docker-repo/sample-docker-repo@sha256:3457292b3c13be82bc2c0596ad7b64c0e283e910415be626238ac954d1da7fe8
+        name: container-image
+        resources: {}
+status: {}
